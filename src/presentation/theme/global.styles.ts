@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Platform } from "react-native";
 
 export const globalStyles = StyleSheet.create({
   centerContainer: {
@@ -15,6 +15,6 @@ export const globalStyles = StyleSheet.create({
     position: "absolute",
     margin: 16,
     right: 0,
-    bottom: 0,
+    bottom: Platform.OS === "android" ? 10 : 70,
   },
 });
