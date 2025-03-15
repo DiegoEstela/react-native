@@ -15,6 +15,6 @@ export const globalStyles = StyleSheet.create({
     position: "absolute",
     margin: 16,
     right: 0,
-    bottom: Platform.OS === "android" ? 10 : 70,
+    bottom: Platform.OS === "android" ? 10 : 10,
   },
 });
